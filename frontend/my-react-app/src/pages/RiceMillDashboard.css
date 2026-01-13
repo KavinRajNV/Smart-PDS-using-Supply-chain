@@ -1,0 +1,277 @@
+.rice-mill-dashboard {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.rice-mill-dashboard h1 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.stats-card, .yield-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+}
+
+.stats-card h3, .yield-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1rem;
+  background: var(--light-gray);
+  border-radius: 8px;
+}
+
+.stat-item label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.stat-value.success {
+  color: var(--success-color);
+}
+
+.stat-value.warning {
+  color: var(--warning-color);
+}
+
+.yield-indicator {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.accuracy-excellent {
+  background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+  border: 3px solid var(--success-color);
+}
+
+.accuracy-good {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+  border: 3px solid var(--warning-color);
+}
+
+.accuracy-poor {
+  background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+  border: 3px solid var(--danger-color);
+}
+
+.yield-value {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.accuracy-excellent .yield-value {
+  color: #155724;
+}
+
+.accuracy-good .yield-value {
+  color: #856404;
+}
+
+.accuracy-poor .yield-value {
+  color: #721c24;
+}
+
+.yield-label {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.accuracy-excellent .yield-label {
+  color: #155724;
+}
+
+.accuracy-good .yield-label {
+  color: #856404;
+}
+
+.accuracy-poor .yield-label {
+  color: #721c24;
+}
+
+.yield-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--medium-gray);
+}
+
+.yield-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.yield-item label {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.yield-item div {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.shipments-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+}
+
+.shipments-card h2 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.shipments-timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.shipments-timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--medium-gray);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -2rem;
+  top: 0.5rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+.timeline-content {
+  background: var(--light-gray);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-left: 1rem;
+}
+
+.shipment-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.shipment-header-row h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-dark);
+}
+
+.shipment-date {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.shipment-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.comparison-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.comparison-item label {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.comparison-item div {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.output-value {
+  color: var(--success-color);
+}
+
+.confirm-button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.confirm-button:hover {
+  background: #218838;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

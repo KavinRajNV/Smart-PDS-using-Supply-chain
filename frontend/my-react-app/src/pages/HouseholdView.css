@@ -1,0 +1,353 @@
+.household-view {
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verification-screen, .success-screen {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.verification-card, .success-card {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: var(--shadow-lg);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.verification-icon, .success-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.verification-card h1, .success-card h1 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.verification-subtitle {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.verification-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+}
+
+.verification-input {
+  padding: 1rem;
+  border: 2px solid var(--medium-gray);
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: border-color 0.2s;
+}
+
+.verification-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.verify-button, .reset-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.success-card p {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.household-dashboard {
+  width: 100%;
+}
+
+.household-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 2rem;
+}
+
+.household-icon {
+  font-size: 5rem;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+  border-radius: 50%;
+}
+
+.household-header h1 {
+  color: var(--primary-color);
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+}
+
+.household-name {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.household-id {
+  color: var(--text-light);
+  margin: 0;
+  font-family: 'Courier New', monospace;
+}
+
+.entitlement-summary {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 2rem;
+}
+
+.entitlement-summary h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.entitlement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.entitlement-card {
+  padding: 1.5rem;
+  background: var(--light-gray);
+  border-radius: 8px;
+  text-align: center;
+  border-left: 4px solid var(--primary-color);
+}
+
+.entitlement-label {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.entitlement-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.entitlement-value.received {
+  color: var(--success-color);
+}
+
+.voice-interaction-panel {
+  background: white;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.voice-interaction-panel h2 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.voice-card {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.voice-prompt {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.voice-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s;
+}
+
+.voice-icon.playing {
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.voice-text {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.voice-animation {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.sound-wave {
+  width: 4px;
+  height: 30px;
+  background: var(--primary-color);
+  border-radius: 2px;
+  animation: wave 1s ease-in-out infinite;
+}
+
+.sound-wave:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.sound-wave:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.5);
+  }
+}
+
+.feedback-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.feedback-button {
+  padding: 3rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: var(--shadow-md);
+}
+
+.yes-button {
+  background: linear-gradient(135deg, var(--success-color) 0%, #20c997 100%);
+  color: white;
+}
+
+.yes-button:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  background: linear-gradient(135deg, #218838 0%, #1ea874 100%);
+}
+
+.no-button {
+  background: linear-gradient(135deg, var(--danger-color) 0%, #e74c3c 100%);
+  color: white;
+}
+
+.no-button:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  background: linear-gradient(135deg, #c82333 0%, #d32f2f 100%);
+}
+
+.button-icon {
+  font-size: 3rem;
+}
+
+.voice-help {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--light-gray);
+  border-radius: 8px;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.help-icon {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .household-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .entitlement-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .feedback-buttons {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .feedback-button {
+    padding: 2.5rem 1.5rem;
+    font-size: 1.5rem;
+  }
+}
+

@@ -1,0 +1,255 @@
+.distributor-view {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.distributor-view h1 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.shipments-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+}
+
+.shipments-section h2 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.shipments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.shipment-card {
+  border: 2px solid var(--medium-gray);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.shipment-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.shipment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--light-gray);
+}
+
+.shipment-header h3 {
+  margin: 0;
+  color: var(--text-dark);
+}
+
+.shipment-route {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: var(--light-gray);
+  border-radius: 8px;
+}
+
+.route-item {
+  margin: 0.5rem 0;
+}
+
+.route-item label {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.route-item div {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.route-arrow {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin: 0.5rem 0;
+}
+
+.shipment-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.detail-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail-cell label {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.detail-cell div {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.compliance-indicator {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: var(--light-gray);
+  border-radius: 8px;
+}
+
+.compliance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.compliance-header label {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.compliance-score {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.compliance-excellent {
+  color: var(--success-color);
+}
+
+.compliance-good {
+  color: var(--warning-color);
+}
+
+.compliance-poor {
+  color: var(--danger-color);
+}
+
+.compliance-bar {
+  width: 100%;
+  height: 12px;
+  background: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.compliance-fill {
+  height: 100%;
+  transition: width 0.3s;
+  border-radius: 6px;
+}
+
+.compliance-fill.compliance-excellent {
+  background: linear-gradient(90deg, var(--success-color) 0%, #20c997 100%);
+}
+
+.compliance-fill.compliance-good {
+  background: linear-gradient(90deg, var(--warning-color) 0%, #ffc107 100%);
+}
+
+.compliance-fill.compliance-poor {
+  background: linear-gradient(90deg, var(--danger-color) 0%, #e74c3c 100%);
+}
+
+.delivery-timeline {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: var(--light-gray);
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.timeline-step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.step-marker {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.timeline-step .step-marker {
+  background: var(--medium-gray);
+  color: var(--text-light);
+}
+
+.timeline-step.completed .step-marker {
+  background: var(--success-color);
+  color: white;
+}
+
+.timeline-step.active .step-marker {
+  background: var(--primary-color);
+  color: white;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.step-label {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.timeline-step.completed .step-label,
+.timeline-step.active .step-label {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.completion-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+  border-radius: 8px;
+  margin-top: 1rem;
+  color: #155724;
+  font-weight: 600;
+}
+
+.badge-icon {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .shipments-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
