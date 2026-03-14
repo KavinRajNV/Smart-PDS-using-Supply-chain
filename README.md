@@ -1,16 +1,74 @@
-# React + Vite
+SMART-PDS
+Secure and Transparent PDS Supply Chain using IoT and AI Voice Calls
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SMART-PDS is an e-Governance platform designed to improve transparency and accountability in the Public Distribution System (PDS). The platform provides end-to-end visibility of food grain movement across the supply chain while enabling inclusive beneficiary validation through AI-powered voice calls.
 
-Currently, two official plugins are available:
+🌐 Live Demo:
+https://smart-pds-using-supply-chain.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Problem
 
-## React Compiler
+The Public Distribution System often faces grain leakage, diversion, and lack of transparency during procurement, transportation, storage, and distribution. Due to limited monitoring and fragmented records, many low-income households do not receive their full food entitlements.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Solution
 
-## Expanding the ESLint configuration
+SMART-PDS introduces a digital monitoring platform that tracks the entire supply chain:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Farmer → Procurement → Rice Mill → Godown → Distributor → Fair Price Shop → Entitled Household → Disposal
+
+The system enables:
+
+Real-time shipment tracking
+
+Transport verification through route and weight signals
+
+Fair Price Shop stock transparency
+
+Voice-based beneficiary feedback
+
+Disposal monitoring and governance insights
+
+Key Features
+
+Supply Chain Visibility
+Tracks grain movement across every stage of the PDS network.
+
+Smart Transport Monitoring
+Identifies route deviation and potential stock discrepancies during transit.
+
+FPS Transparency Dashboard
+Displays stock received, distributed, and remaining at each Fair Price Shop.
+
+Voice-Based Citizen Validation
+Allows rural and elderly households to confirm ration delivery through simple voice interaction.
+
+Governance Analytics
+Provides insights and alerts that help authorities identify irregularities.
+
+Technology Stack
+
+Frontend
+
+React
+
+Component-based UI architecture
+
+Visualization
+
+Interactive dashboards
+
+Maps and tracking interfaces
+
+Data charts
+
+AI Layer
+
+Voice NLP interaction
+
+Pattern analysis for distribution monitoring
+
+System Design
+
+Role-based dashboards
+
+Supply chain monitoring panels
