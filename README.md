@@ -61,7 +61,7 @@ Provides insights and alerts that help authorities identify irregularities.
 - Data charts  
 
 ### AI Layer
-- Voice NLP interaction  
+- Voice NLP interaction  (Not implemented yet)
 - Pattern analysis for distribution monitoring  
 
 ### System Design
